@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://AntCon:Acon1997!@contactkeeper.eudnn.mongodb.net/ContactKeeper?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}

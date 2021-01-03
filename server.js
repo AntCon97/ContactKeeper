@@ -1,8 +1,11 @@
 const express = require('express');
+const connectDB = require('./config/db');
 
 const app = express();
 
-app.get('/', (req, res) => res.json({ msg: 'welcome to contact keeper' }));
+connectDB();
+
+app.use(express.json({ extended: false }));
 
 app.use('/api/users', require('./routes/users'));
 app.use('/api/contacts', require('./routes/contacts'));
